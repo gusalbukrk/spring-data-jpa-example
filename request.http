@@ -1,0 +1,25 @@
+GET http://localhost:8081/users
+
+###
+
+POST http://localhost:8081/users
+Content-Type: application/json
+
+{
+  "email": "gusalbukrk@gmail.com",
+  "password": "pass1234"
+}
+
+###
+
+POST http://localhost:8081/users
+Content-Type: application/json
+
+{
+  "email": "gus@gmail.com",
+  "password": "pass"
+}
+
+###
+
+GET http://localhost:8081/users/find/gus@gmail.com
